@@ -7,4 +7,4 @@ RUN mvn --batch-mode clean package -DskipTests
 FROM eclipse-temurin:17-jre
 WORKDIR /app
 COPY --from=build /app/target/classes ./classes
-CMD ["java", "-cp", "classes", "com.example.GradeCalculator"]
+CMD ["java", "-cp", "/app/classes", "com.example.maven_github_demo.GradeCalculator"]
