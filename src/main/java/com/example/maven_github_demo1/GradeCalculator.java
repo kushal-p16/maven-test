@@ -10,7 +10,7 @@ public class GradeCalculator {
     }
 
     public String result(double average) {
-        return average >= 40 ? "PASS" : "FAIL";
+        return average >= 70 ? "PASS" : "FAIL";
     }
 
     public static void main(String[] args) {
